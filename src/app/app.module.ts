@@ -8,6 +8,7 @@ import { CardBoxComponent } from './components/card-box/card-box.component';
 import { CarouselItemsComponent } from './components/carousel-items/carousel-items.component';
 import { AmountBoxComponent } from './components/amount-box/amount-box.component';
 import { SvgComponentsModule } from 'src/assets/svgs/svg.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,12 @@ import { SvgComponentsModule } from 'src/assets/svgs/svg.module';
     CarouselItemsComponent,
     AmountBoxComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, SvgComponentsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    SvgComponentsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
