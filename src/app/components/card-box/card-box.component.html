@@ -14,13 +14,13 @@
   </div>
 
   <div className="card-footer" class="flex justify-around text-2x1 h-8">
-    <p>Olá Fulano</p>
-    <p>Agencia 0001</p>
-    <p>CC 111111111</p>
+    <p>Olá, {{accountData.name}}</p>
+    <p>Agencia {{accountData.account.agency}}</p>
+    <p>CC {{accountData.account.number}}</p>
   </div>
 
   <div className="card-limit" class="flex justify-end text-base mr-4 mb-3">
-    <p>Limit:1000</p>
+    <p>Limit:{{accountData.card.limit}}</p>
   </div>
 
 </div>
